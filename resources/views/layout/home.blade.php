@@ -49,6 +49,7 @@
           </div>
           <div class="sidebar-head-content">
             Lorem ipsum dolor sit
+            lorem
           </div>
         </div>
       
