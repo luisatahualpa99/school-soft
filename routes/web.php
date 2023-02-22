@@ -17,8 +17,17 @@ Route::get('/', function () {
 }); */
 
 
-Route::get('/', 'homeController@index');
+Route::get('/', 'homeController@index')->name('inicio');
 
-Route::get('/hola', function () {
-    return 'Hola mundo';
-});
+
+
+/* Rutas estudiantes */
+Route::get('/studenst-history', 'StudentController@history')->name('students-history');
+Route::get('/studenst-new', 'StudentController@create')->name('students-new');
+
+
+// Route::get('/studenst-get-all', 'StudentController@history-get-all');
+
+
+
+// Route::get('/studenst-history', 'StudentController@history');
