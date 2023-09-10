@@ -27,8 +27,6 @@
                             
                         </form>
                     </div>
-                        
-        
 
                 </div>
             </div>
@@ -41,6 +39,6 @@
 
 
 
-    @section('content_script')
+    @section('scripts')
         <script type="text/javascript" src="js/app/students/script-students-new.js?lastV1=1.0"></script>
     @endsection()

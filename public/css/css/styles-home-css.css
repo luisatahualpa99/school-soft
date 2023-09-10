@@ -15,18 +15,32 @@
     --colora-azul-1:#8aeae5;
     --colora-azul-1:#c2fffc;
 
+    /* colores verdes esmerada */
+    --verde-esmeralda1: #003817;
+    --verde-esmeralda2: #026842;
+    --verde-esmeralda3: #009d71;
+    --verde-esmeralda4: #5ccda7;
+    --verde-esmeralda5: #98ffe0;
+
+    /* grices */
+    --gris-palido: #E1F1F2;
+
   }
 
+
+#content-wrapper{
+    overflow: hidden;
+}
 #sidebar-container{
     min-height:  100vh;
     margin-left: -18rem;
     transition: all 0.5s ease; 
+    overflow-y: scroll;
+    height: 100vh;
 }
 
-
 #sidebar-container .sidebar-head{
-    background: cornflowerblue;
-
+    background-color: aquamarine
 }
 
 #sidebar-container .sidebar-head-logo{
@@ -34,37 +48,30 @@
 }
 
 #sidebar-container .sidebar-head-content{
-
-    padding: 2rem 1.5rem;
+    padding: 0rem 1.5rem;
 }
 
-
-#sidebar-container .sidebar-menu{
-    width: 18rem;
+#content-wrapper:not(.toggled) #sidebar-container{
+    padding-left: 51px;
 }
-
-
 #content-wrapper.toggled #sidebar-container{
-    margin-left: 0;
+    padding-left: 286px;
 }
 
-@media(min-width:768px){
+#sidebar-container span:hover{
+    background-color: var(--gris-palido);
+    color: var(--verde-esmeralda3);
+    font-weight: bold;
+}
 
-    #sidebar-container{
-        margin-left: 0;
-    }
+#sidebar-container::-webkit-scrollbar {
+    width: 4px;
+    border-left: 1px solid #dadada;
+}
 
-    #page-container{
-        min-width: 0;
-        width: 100;
-    }
-
-    #content-wrapper.toggled #sidebar-container{
-        margin-left: -18rem;
-    }
-
-
-
+#sidebar-container::-webkit-scrollbar-thumb {
+    background-color: var(--verde-esmeralda2);
+    border-radius: 10px;
 }
 
 
@@ -113,12 +120,9 @@
 }
 
 .div-list-sidebar ul li a:hover {
-    /* font-size: 17px; */
     font-weight: bold;
-    color: var(--colora-azul-2);
+    color: var(--verde-esmeralda3);
 }
-
-
 
 
 
@@ -145,6 +149,17 @@
 }
 
 
+.layout-content{
+    overflow: auto;
+    /*margin-right: -5px;*/
+}
 
-/* colores */
 
+/* tamaños de fuentes */
+
+.text-fontsize-12{
+    font-size: 12px !important;
+}
+.text-fontsize-15{
+    font-size: 15px !important;
+}

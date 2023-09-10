@@ -15,6 +15,11 @@ class homeController extends Controller
     {
         //
         return view('views.inicio');
+
+
+
+
+
     }
 
     /**
